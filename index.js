@@ -9,7 +9,13 @@ async function Main(){
 
     try {
         mongoose.connect(MONGO_URI,
-                {useNewUrlParser : true},()=> console.log('mongo conectado')
+                {useNewUrlParser : true,
+                   
+                    useUnifiedTopology: true
+                
+                
+                
+                },()=> console.log('mongo conectado')
             
             )
             
