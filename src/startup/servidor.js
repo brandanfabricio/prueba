@@ -8,7 +8,7 @@ let _config = null;
 class Server {
     constructor({Config ,Rutas}){
         _config = Config;
-        _express = express().use(Rutas);
+        _express = express().use(Rutas).use(express.static('public'))
     }
     start(){
         return new Promise(resolve => {
