@@ -4,8 +4,8 @@
   "description": "base de la red socila, que vamos a contruir, este servicio es para la creacion  de usuarios, y comentarios y mas ",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start" : " node index.js"
+    "start" : " node index.js",
+    "dev": "nodemon index.js"
     
   },
   "author": "brandan fabricio",
