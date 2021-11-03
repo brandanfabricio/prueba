@@ -1,0 +1,27 @@
+{
+  "name": "red-social",
+  "version": "1.0.0",
+  "description": "base de la red socila, que vamos a contruir, este servicio es para la creacion  de usuarios, y comentarios y mas ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start" : " node index.js"
+    
+  },
+  "author": "brandan fabricio",
+  "license": "ISC",
+  "dependencies": {
+    "awilix": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.12",
+    "mongoose-autopopulate": "^0.16.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.14"
+  }
+}
