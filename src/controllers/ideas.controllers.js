@@ -8,6 +8,9 @@ class  IdeasControllers{
 
         return  res.send(await  _ideasService.get());
     }
+    async getid(id){
+        return res.send(await _ideasService.getid() );
+    }
     async post(req,res){
         const {body} = req;
         const crearIdea = await _ideasService.post(body);
