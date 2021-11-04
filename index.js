@@ -15,7 +15,7 @@ async function Main(){
                 
                 
                 
-                },()=> console.log('mongo conectado')
+                },()=> console.log("Database_URL", process.env.MONGO_URI)
             
             )
             
