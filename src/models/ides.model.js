@@ -6,6 +6,13 @@ const IdeasSchema = new Schema({
     descripcion:{type:String}
 })
 
+
+
+IdeasSchema.methods.toJSON = function() {
+    const { __v, ...data  } = this.toObject();
+    return data;
+}
+
 module.exports = mongoose.model('ideas',IdeasSchema);
 
 
