@@ -3,15 +3,16 @@ class BaseRepositorio {
     constructor(model){
         this.model = model;
     }
-    async getid(){    
+    async get(){    
        
             return  await this.model.find();
 
            
     }
-    async get(id){
-        return await this.model.findById();
+    async getid(id){
+        return await this.model.findById(id);
     }
+    
     async post(entity){
         return await this.model.create(entity);
     }

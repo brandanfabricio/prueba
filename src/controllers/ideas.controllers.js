@@ -5,12 +5,16 @@ class  IdeasControllers{
         _ideasService = IdeasService
     }
     async get(req,res){
-
         return  res.send(await  _ideasService.get());
     }
-    async getid(id){
-        return res.send(await _ideasService.getid() );
+
+
+    async getid(req,res){
+        const {id} = req.params;
+        return res.send(await _ideasService.getid(id) );
     }
+
+
     async post(req,res){
         const {body} = req;
         const crearIdea = await _ideasService.post(body);

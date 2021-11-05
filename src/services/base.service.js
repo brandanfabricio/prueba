@@ -7,6 +7,10 @@ class BaseService{
         return await this.repsositorio.get();
     }
 
+    async getid(id){
+        return await this.repsositorio.getid(id);
+    }
+
     async post(entity){
         return await this.repsositorio.post(entity)
     }
